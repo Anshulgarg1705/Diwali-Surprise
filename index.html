@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Diwali Surprise ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="sparkles" id="sparkles"></div>
+
+<!-- WELCOME SCREEN -->
+<section id="welcome" class="screen active">
+    <div class="diya">🪔</div>
+    <p class="small-text">A LITTLE SOMETHING FOR SOMEONE SPECIAL</p>
+    <h1>Hey, Beautiful!</h1>
+    <p class="subtitle">Someone has prepared a little surprise for you...</p>
+    <button onclick="startSurprise()">Open Your Surprise ✨</button>
+</section>
+
+<!-- CONFESSION SCREEN -->
+<section id="confession" class="screen">
+    <div class="emoji">🤫</div>
+    <p class="small-text">BUT FIRST...</p>
+    <h1>There's Something<br>I Need To Confess!</h1>
+    <p class="subtitle">Something I've been hiding for a long time.</p>
+    <button onclick="showHate()">Tell Me! 👀</button>
+</section>
+
+<!-- HATE SCREEN -->
+<section id="hate" class="screen">
+    <div class="emoji">😤</div>
+    <h1 class="hate-title">YES, I HATE YOU!</h1>
+    <p class="subtitle">And I have some very serious reasons...</p>
+
+    <div class="reasons">
+        <p>❤️ I hate how effortlessly you make me smile.</p>
+        <p>❤️ I hate how your smile can make an ordinary day into a beautiful One.</p>
+        <p>❤️ I hate how you are so effortlessly adorable.</p>
+        <p>❤️ I hate how you manage to be special without even trying.</p>
+        <p>❤️ I hate how there's always something wonderful about you.</p>
+    </div>
+
+    <h2 class="reveal">WAIT... THAT DOESN'T SOUND LIKE HATE! 😂</h2>
+    <button onclick="showGallery()">Continue, Amma Ji  ❤️</button>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section id="gallery" class="screen gallery-screen">
+    <p class="small-text">A FEW REASONS TO SMILE</p>
+    <h1>Look Who's So Special! ✨</h1>
+    <p class="subtitle">You just make the world a little brighter.</p>
+
+    <div class="photo-grid">
+
+        <div class="photo-card">
+            <div class="photo-frame">
+                <img src="images/her1.jpg" alt="Her beautiful picture">
+            </div>
+            <h3>That Beautiful Smile ❤️</h3>
+            <p>Never let Someone take away that smile. It suits you perfectly.</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-frame">
+                <img src="images/her2.jpg" alt="Her picture">
+            </div>
+            <h3>Simply Wonderful ✨</h3>
+            <p>You don't need a reason to shine. You just Slayyyy 💓.</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-frame">
+                <img src="images/her3.jpg" alt="Her picture">
+            </div>
+            <h3>One Of A Kind 🌷</h3>
+            <p>There's something about your personality that makes you unforgettable.</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-frame">
+                <img src="images/her4.jpg" alt="Her picture">
+            </div>
+            <h3>Keep Being You 🦋</h3>
+            <p>The world needs more people who carry the kind of warmth you do(Like You ....Not you except i guess me hehe). </p>
+        </div>
+
+    </div>
+
+    <button onclick="showLetter()">One Last Surprise 💌</button>
+</section>
+
+<!-- FINAL LETTER -->
+<section id="letter" class="screen">
+    <div class="letter-box">
+        <div class="letter-icon">🪔</div>
+        <p class="small-text">A LITTLE MESSAGE FROM ME</p>
+        <h1>Happy Diwali!</h1>
+
+        <div class="letter-content">
+            Hey, You! ❤️
+
+            <br><br>
+
+            First of all, wishing you a very Happy Diwali!
+
+            <br><br>
+
+            May this festival fill your life with endless happiness,
+            beautiful memories, success and all the little things
+            that make you smile.
+
+            <br><br>
+
+            And about that whole "you think That you are person to hate" thing...
+
+            <br><br>
+
+            Well, You are not the person to hate so dont be so harshhh on you all the time. And if 
+            teasing you, annoying you and pretending
+            to be irritated by you counts as hate, then maybe
+            I hate you muchhhhhhhhh. 😂
+
+            <br><br>
+
+            But honestly, I don't hate you. You're a genuinely
+            wonderful person, and I hope you never let anyone
+            make you doubt how special you are.
+            So special to me Pglettt 😋
+            <br><br>
+
+            Keep smiling, keep shining, and never lose
+            that beautiful spark that makes you YOU.
+
+            <br><br>
+
+            May your life always be brighter than the
+            brightest Diwali lights.
+
+            <br><br>
+
+            Take care, you wonderful human! ❤️
+
+            <br><br>
+
+            <strong>HAPPY DIWALI! 🪔✨</strong>
+        </div>
+
+        <div class="signature">With lots of Love from the Uncle ❤️</div>
+    </div>
+
+    <button onclick="celebrate()">One Last Thing! 🎆</button>
+</section>
+
+<!-- FINAL SURPRISE -->
+<section id="final" class="screen">
+    <div class="firework">🎆</div>
+    <h1>Keep Shining!</h1>
+    <p class="subtitle">
+        The world is a little brighter when you are in it.
+    </p>
+    <h2>Happy Diwali, Day Maker! ❤️</h2>
+    <div class="final-diya">🪔 🪔 🪔</div>
+    <p class="small-text">MADE WITH A LITTLE BIT OF DRAMA AND A LOT OF GOOD WISHES.</p>
+    <button onclick="location.reload()">Watch Again ↻</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

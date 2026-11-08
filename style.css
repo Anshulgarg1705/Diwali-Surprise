@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #40204b, #100b20 70%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.screen {
+    min-height: 100vh;
+    width: 100%;
+    padding: 45px 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.screen.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #ffd879;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    margin: 15px 0;
+    text-shadow: 0 0 20px #ffb52e;
+}
+
+h2 {
+    color: #ffdb91;
+    margin: 20px 0;
+}
+
+.subtitle {
+    color: #e7d9ef;
+    font-size: 15px;
+    margin: 12px 0 25px;
+    line-height: 1.8;
+}
+
+.small-text {
+    color: #ffca71;
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin: 15px 0;
+}
+
+.diya {
+    font-size: 90px;
+    animation: glow 2s infinite alternate;
+}
+
+.emoji {
+    font-size: 65px;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 8px orange); }
+    to { filter: drop-shadow(0 0 35px gold); }
+}
+
+button {
+    border: 1px solid #ffdc91;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #f7b84c, #e78b20);
+    color: #32152d;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 0 20px #e7a13c55;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 30px #ffc95c;
+}
+
+.reasons {
+    width: min(520px, 95%);
+    text-align: left;
+    margin: 20px auto;
+}
+
+.reasons p {
+    background: #ffffff12;
+    border: 1px solid #ffd47755;
+    border-radius: 12px;
+    padding: 13px;
+    margin: 10px 0;
+    color: #ffe8c0;
+    line-height: 1.6;
+}
+
+.hate-title {
+    color: #ff8d9d;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+}
+
+.reveal {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* PHOTO GALLERY */
+
+.gallery-screen {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.photo-grid {
+    width: min(850px, 100%);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin: 35px auto;
+}
+
+.photo-card {
+    padding: 15px;
+    background: #ffffff0c;
+    border: 1px solid #ffd77b55;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-7px);
+    background: #ffffff17;
+}
+
+.photo-frame {
+    padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #fff0a8, #f1a72c, #fff3c0);
+    box-shadow: 0 0 12px #ffc44e, 0 0 30px #ffad3666;
+    animation: photoGlow 2.5s infinite alternate;
+}
+
+@keyframes photoGlow {
+    from { box-shadow: 0 0 10px #ffc44e; }
+    to { box-shadow: 0 0 30px #ffc44e, 0 0 55px #ff9f2e77; }
+}
+
+.photo-frame img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-card h3 {
+    color: #ffdb91;
+    margin: 17px 0 8px;
+    font-size: 16px;
+}
+
+.photo-card p {
+    color: #e7d9ef;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* LETTER */
+
+.letter-box {
+    width: min(600px, 100%);
+    background: linear-gradient(145deg, #fff0d0, #f9dcae);
+    color: #583524;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 0 40px #ffb52e55;
+    text-align: left;
+}
+
+.letter-icon {
+    text-align: center;
+    font-size: 45px;
+}
+
+.letter-box h1 {
+    text-align: center;
+    color: #a54d26;
+    text-shadow: none;
+}
+
+.letter-box .small-text {
+    color: #98632c;
+    text-align: center;
+}
+
+.letter-content {
+    line-height: 1.9;
+    font-size: 14px;
+    color: #67402f;
+    white-space: normal;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 27px;
+    text-align: right;
+    color: #a34c30;
+    margin-top: 25px;
+}
+
+.firework {
+    font-size: 100px;
+    animation: firework 1s infinite alternate;
+}
+
+@keyframes firework {
+    from { transform: scale(.8); }
+    to { transform: scale(1.2); }
+}
+
+.final-diya {
+    font-size: 55px;
+    margin: 25px;
+}
+
+/* FLOATING SPARKLES */
+
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 0;
+    color: #ffd879;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(100vh) rotate(0);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    to {
+        transform: translateY(-15vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        gap: 20px;
+    }
+
+    .photo-frame img {
+        height: 300px;
+    }
+
+    .letter-box {
+        padding: 23px;
+    }
+
+    .letter-content {
+        font-size: 13px;
+    }
+}
